@@ -10,4 +10,12 @@
 }
 .nav-item{
     font-size: 20px;
+    padding: 20px 0px;
+}
+.shop{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.account{
+    list-style: none;
 }
