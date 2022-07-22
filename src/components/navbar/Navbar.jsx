@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.css'
 const Navbar = () => {
   return (
-<nav className="navbar navbar-expand-lg bg-light">
+<nav className="navbar sticky-top navbar-expand-lg bg-light">
   <div className="container">
-    <a className="navbar-brand" href="#">Dust-In</a>
+    <a className="navbar-brand" href="#">Trash-In</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -35,10 +35,14 @@ const Navbar = () => {
     </div>
     <li className="account">
           <a className="account" href="#">
-          <button type="button" className="btn btn-success">Account</button>
-
-            </a>
-            
+          <button type="button" className="btn btn-success">Account
+          <div class="dropdown-content">
+          <a href="#">Login</a>
+          <a href="#">Signup</a>
+          <a href="#">Dashboard</a>
+          </div>
+          </button>
+            </a> 
         </li>
   
   </div>

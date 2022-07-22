@@ -4,6 +4,7 @@
 }
 .banner{
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 .text-1{
     font-size: 30px;
@@ -15,13 +16,14 @@
 }
 .text-3{
     font-size: 40px;
+    color: white;
     
 }
-.btn{
-    margin-top: 20px;
-}
+    
+
 .btn{
     font-size: large;
     font-weight: 500px;
+    margin-top: 20px;
 
 }

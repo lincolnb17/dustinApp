@@ -1,0 +1,19 @@
+.contact-content{
+    display: flex;
+    justify-content: space-around;
+}
+.titles{
+    font-weight: bold;
+    font-size: 25px;
+}
+.des{
+    font-weight: 550;
+}
+.icons{
+    font-weight: 550;
+
+}
+.icons img{
+    height: 50px;
+    width: 50px;
+}
