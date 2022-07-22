@@ -1,0 +1,13 @@
+.navbar-brand{
+    font-size: xx-large;
+}
+.bg-light{
+    background-color: #cba85e !important;
+}
+#navbarNav{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-item{
+    font-size: 20px;
+}
