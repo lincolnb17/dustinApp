@@ -1,0 +1,27 @@
+.bimg{
+
+    background-image: url('./images/1.jpg');
+}
+.banner{
+    padding-top: 200px;
+}
+.text-1{
+    font-size: 30px;
+    
+}
+.text-2{
+    font-size: 75px;
+    
+}
+.text-3{
+    font-size: 40px;
+    
+}
+.btn{
+    margin-top: 20px;
+}
+.btn{
+    font-size: large;
+    font-weight: 500px;
+
+}
