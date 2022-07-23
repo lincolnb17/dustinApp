@@ -61,7 +61,17 @@
 {
     margin-right: 10px;
 }
-.contact .right form .field input,
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border:1px solid #4b6584;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    margin-top: -20px;
+}
 .contact .right form .textarea textarea
 {
     height: 100%;
@@ -72,6 +82,7 @@
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins',sans-serif;
+    margin-top: 0px;
 }
 .contact .right form .textarea textarea
 {

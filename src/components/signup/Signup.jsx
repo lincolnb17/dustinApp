@@ -1,9 +1,9 @@
 import React from 'react'
+import "./Signup.css"
 import { Link } from "react-router-dom";
-import './Login.css'
-const Login = () => {
+export const Signup = () => {
   return (
-    <div className='loginp'>
+    <div className='signupp'>
         <div className="bg"></div>
 
 <form>
@@ -12,17 +12,19 @@ const Login = () => {
   </div>
   
   <div className="form-field">
-    <input type="password" placeholder="Password" required/> </div>
+    <input type="password" placeholder="Enter password" required/>
+  </div>
+  <div className="form-field" id="conpass" >
+    <input type="password" placeholder="Confirm password" required/>
+  </div>
   
-  <div class="form-field">
-    <button className="btn" type="submit">Log in</button>
+  <div className="form-field">
+    <button className="btn" type="submit">Signup</button>
     <Link className="nav-link active" to="/home"><button className="btn" type="submit">Back</button></Link>
     
   </div>
 </form>
-
     </div>
   )
 }
-
-export default Login
+export default Signup
