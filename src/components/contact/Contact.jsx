@@ -47,31 +47,31 @@ const Contact = () => {
                 </div>
 
                 <div className="column right">
-                    <h3>Message Me</h3>
+                    <div className='titles'>Message Me</div>
                     <form action="">
                     <div className="fields"> 
                         <div className="field name">
-                         <label for="First Name">First Name</label>
+                         <label for="First Name"></label>
                             <input type="text" placeholder="Name" required></input>
                         </div>
                         <div className="field email">
-                       <label for="First Name">Email</label>
+                       <label for="First Name"></label>
                             <input type="email" placeholder="Email" required></input>
                         </div>
                         </div>
+
                         <div className="field">
-                          <label for="First Name">Subject</label>
+                          <label for="First Name"></label>
                             <input type="text" placeholder="Subject" required></input>
                         </div>
                     
                         <div className="field textarea">
-                           <label for="First Name">Message</label> 
+                           <label for="First Name"></label> 
                             <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
 
                         </div>
-                        <div className="button">
-                            <button type="submit">Send message</button>
-                        </div>
+                        <button type="button" className="btn btncon btn-success">Submit</button>
+
                         </form>
                  </div> 
                        
