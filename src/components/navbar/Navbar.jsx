@@ -1,48 +1,51 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from "react-router-dom";
 import './Navbar.css'
 const Navbar = () => {
   return (
 <nav className="navbar sticky-top navbar-expand-lg bg-light">
   <div className="container">
-    <a className="navbar-brand" href="#">Trash-In</a>
+  <Link className="nav-link active" to="/home"><a className="navbar-brand">Trash-In</a></Link>
+    
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        <Link className="nav-link active" to="/home">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
+        <Link className="nav-link active" to="/about">About</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Services</a>
+        <Link className="nav-link active" to="/services">Services</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contact</a>
+        <Link className="nav-link active" to="/contact">Contact</Link>
         </li>
         <li className="shop">
-          <a className="shop" href="#">
+          <Link className="nav-link active" to="/shop">
           <button type="button" className="btn btn-success">Shop</button>
 
-            </a>
+          </Link>
             
         </li>
         
       </ul>
     </div>
     <li className="account">
-          <a className="account" href="#">
+    <Link className="nav-link active" to="/home">
+          <a className="account">
           <button type="button" className="btn btn-success">Account
           <div class="dropdown-content">
-          <a href="#">Login</a>
-          <a href="#">Signup</a>
-          <a href="#">Dashboard</a>
+          <Link className="nav-link active" to="/login">Login</Link>
+          <Link className="nav-link active" to="/signup">Signup</Link>
+          <Link className="nav-link active" to="/dashboard">Dashboard</Link>
           </div>
           </button>
             </a> 
+            </Link>
         </li>
   
   </div>

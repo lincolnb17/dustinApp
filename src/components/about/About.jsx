@@ -8,7 +8,7 @@ const About = () => {
             <a className="title">About-Us</a>
             <div className="about-content">
                 <div className="column-left">
-                    <img src={img} height="700px" width="600px" alt=""></img>
+                    <img src={img} height="500px" width="600px" alt=""></img>
                 </div>
                 <div className="column-right">
                     <div className="text">About Dust-In<br></br><span>Always Working for a Clean Tomorrow</span></div>
