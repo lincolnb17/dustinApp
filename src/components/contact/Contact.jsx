@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
 
                 <div className="column right">
-                    <div className='titles'>Message Me</div>
+                    <div className='titles'>Message Us</div>
                     <form action="">
                     <div className="fields"> 
                         <div className="field name">
