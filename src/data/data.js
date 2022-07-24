@@ -29,7 +29,7 @@ const list = [
   },
   {
     id: 5,
-    title: "Aluminium Scrap Extrusion",
+    title: "Aluminium Scrap",
     price: 200,
     img: "https://scontent.fktm3-1.fna.fbcdn.net/v/t1.15752-9/294909655_3371334723188913_5567157755270808108_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=iE8jiXapngcAX8y2wIJ&_nc_ht=scontent.fktm3-1.fna&oh=03_AVL2pFwKTbRWZzEpE6g9g0ekigjgeJIgffsocgy0jzGqew&oe=63026000",
     amount: 1,
