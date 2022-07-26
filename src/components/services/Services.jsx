@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Services.css"
+import { Link } from "react-router-dom";
 import reuse from "./images/reuse.png"
 import repair from "./images/repair.png"
 
@@ -34,7 +35,8 @@ const Services = () => {
                 </div>
                 
             </div>
-            <button type="button" className="btn btn-secondary btn-light">Request A Pickup</button>
+            <Link className="nav-link active" to="/pickup"><button type="button" className="btn btn-secondary btn-light">Request A Pickup</button></Link>
+            
             
         </div>
         </div>
