@@ -21,9 +21,7 @@ const Shop = () => {
     setCart([...arr]);
   };
 
-  // useEffect(() => {
-  //   console.log("cart change");
-  // }, [cart]);
+
 
   return (
     <React.Fragment>
