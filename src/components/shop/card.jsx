@@ -10,7 +10,7 @@ const Cards = ({ item, handleClick }) => {
       <div className="details">
         <p>{title}</p>
         <p className="price">Price - Rs {price} /kg</p>
-        <button type="button" class="btn btn-primary" onClick={() => handleClick(item)}>Add to Cart</button>
+        <button type="button" class="btn btn-success" onClick={() => handleClick(item)}>Add to Cart</button>
       </div>
     </div>
   );

@@ -1,3 +1,6 @@
 .price{
     font-weight: bold;
 }
+.btn:hover{
+    background-color: #157347;
+}
