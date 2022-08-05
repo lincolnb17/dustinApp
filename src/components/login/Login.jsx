@@ -46,8 +46,9 @@ const Login = () => {
     <input type="password" name="password" value={user.password}placeholder="Password" required onChange={handleChange}/> </div>
   
   <div class="form-field">
-    <button className="btn btn-success" type="button"onClick={login}>Log in</button>
+    
     <Link className="nav-link active" to="/home"><button className="btn" type="submit">Back</button></Link>
+    <Link className="nav-link active" to="/profile"><button className="btn btn-success" type="button"onClick={login}>Log in</button></Link>
     
   </div>
 </form>

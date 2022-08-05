@@ -16,12 +16,9 @@ const Header = ({ setShow, size }) => {
           </span>
           <span>{size}</span>
         </div>
-     <div class="dropdown">
-         <button class="dropbtn">Username</button>
-          <div className="dropdown-content">
-          <Link className="nav-link active" to="/home">Logout</Link>
-          </div>
-    </div>
+ 
+    <Link className="nav-link active" to="/profile"><button type="button" class="btn btn-success">My Profile</button></Link>
+    
 
       </div>
       </div>

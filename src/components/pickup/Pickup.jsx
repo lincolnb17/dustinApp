@@ -9,7 +9,7 @@ const Pickup = () => {
 			
 			<div class="leftp"></div>
 			<div class="rightp">
-      <Link className="nav-link active" to="/home"><button className="btnp">Back</button></Link>
+      <Link className="nav-link active" to="/profile"><button className="btnp">Back</button></Link>
 				<h2>Pickup Request Form</h2>
 				
 				<input type="text" class="fieldp" placeholder="Name"></input>
