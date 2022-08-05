@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Signup = () => {
 
   const [user,setUser]=useState({
+    fname:"",
     email:"",
     password:"",
     reEnterPassword:""
@@ -30,18 +31,21 @@ const Signup = () => {
         <div className="bg"></div>
 
 <form>
-  <div className="form-field">
-    <input type="email" name="email" value={user.email} placeholder="Email" required onChange={handleChange}/>
+<div className="form-fields">
+    <input type="text"  name="fname" value={user.fname} placeholder="Full Name" required onChange={handleChange}/>
+  </div>
+  <div className="form-fields">
+    <input type="email"id='email' name="email" value={user.email} placeholder="Email" required onChange={handleChange}/>
   </div>
   
-  <div className="form-field">
+  <div className="form-fields">
     <input type="password" name="password" value={user.password} placeholder="Enter password" required onChange={handleChange}/>
   </div>
-  <div className="form-field" id="conpass" >
+  <div className="form-fields" id="conpass" >
     <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Confirm password" required onChange={handleChange}/>
   </div>
   
-  <div className="form-field">
+  <div className="form-fields">
     <button className="btn" type="submit">Signup</button>
     <Link className="nav-link active" to="/home"><button className="btn" type="submit">Back</button></Link>
     
