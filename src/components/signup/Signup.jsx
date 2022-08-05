@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import axios from 'axios';
 
 import "./Signup.css"
 import { Link } from "react-router-dom";
@@ -6,7 +7,7 @@ import { Link } from "react-router-dom";
 const Signup = () => {
 
   const [user,setUser]=useState({
-    fname:"",
+    name:"",
     email:"",
     password:"",
     reEnterPassword:""
@@ -19,7 +20,16 @@ const Signup = () => {
     })
   
   }
-  
+   const signup =()=>{
+    const {name,email,password,reEnterPassword}=user
+    if (name && email && password &&(password==reEnterPassword)){
+      axios.post('http://localhost:9002/signup',user)
+      .then(res=> alert(res.data.message))
+
+    }else{
+      alert("Invalid Input")
+    }
+   }
 
 
 
@@ -27,15 +37,14 @@ const Signup = () => {
 
     
     <div className='signupp'>
-      {console.log("User",user)}
         <div className="bg"></div>
 
 <form>
 <div className="form-fields">
-    <input type="text"  name="fname" value={user.fname} placeholder="Full Name" required onChange={handleChange}/>
+    <input type="text"  name="name" value={user.name} placeholder="Full Name" required onChange={handleChange}/>
   </div>
   <div className="form-fields">
-    <input type="email"id='email' name="email" value={user.email} placeholder="Email" required onChange={handleChange}/>
+    <input type="email" name="email" value={user.email} placeholder="Email" required onChange={handleChange}/>
   </div>
   
   <div className="form-fields">
@@ -46,7 +55,7 @@ const Signup = () => {
   </div>
   
   <div className="form-fields">
-    <button className="btn" type="submit">Signup</button>
+    <button className="btn btn-success" type="button" onClick={signup}>Signup</button>
     <Link className="nav-link active" to="/home"><button className="btn" type="submit">Back</button></Link>
     
   </div>

@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from "react-router-dom";
+import axios from "axios"
 import './Login.css'
 
 
@@ -18,6 +19,17 @@ const Login = () => {
     })
   
   }
+  const login =()=>{
+    const {name,email,password}=user
+    if ( email && password){
+      axios.post('http://localhost:9002/login',user)
+      .then(res=>alert(res.data.message))
+
+    }else{
+      alert("Invalid data")
+    }
+    
+   }
 
 
   return (
@@ -34,7 +46,7 @@ const Login = () => {
     <input type="password" name="password" value={user.password}placeholder="Password" required onChange={handleChange}/> </div>
   
   <div class="form-field">
-    <button className="btn" type="submit">Log in</button>
+    <button className="btn btn-success" type="button"onClick={login}>Log in</button>
     <Link className="nav-link active" to="/home"><button className="btn" type="submit">Back</button></Link>
     
   </div>
