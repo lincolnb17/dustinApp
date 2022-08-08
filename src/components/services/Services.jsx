@@ -35,7 +35,7 @@ const Services = () => {
                 </div>
                 
             </div>
-            <Link className="nav-link active" to="/pickup"><button type="button" className="btn btn-secondary btn-light">Request A Pickup</button></Link>
+            <Link className="nav-link active" to="/login"><button type="button" className="btn btn-secondary btn-light">Request A Pickup</button></Link>
             
             
         </div>
