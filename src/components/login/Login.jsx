@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axios from "axios"
 import './Login.css'
 
 
 
 const Login = () => {
-
+  const navigate = useNavigate()
   const [user,setUser]=useState({
     email:"",
     password:""
@@ -23,7 +23,13 @@ const Login = () => {
     const {name,email,password}=user
     if ( email && password){
       axios.post('http://localhost:9002/login',user)
-      .then(res=>alert(res.data.message))
+      .then(res=>{
+        alert(res.data.message)
+        if((res.data.message)=="Login Sucess"){
+          navigate('/profile')
+        }
+        
+      })
 
     }else{
       alert("Invalid data")
@@ -34,7 +40,6 @@ const Login = () => {
 
   return (
     <div className='loginp'>
-      {console.log(user)}
         <div className="bg"></div>
 
 <form>
@@ -48,7 +53,8 @@ const Login = () => {
   <div class="form-field">
     
     <Link className="nav-link active" to="/home"><button className="btn" type="submit">Back</button></Link>
-    <Link className="nav-link active" to="/profile"><button className="btn btn-success" type="button"onClick={login}>Log in</button></Link>
+  <button className="btn btn-success" type="button"onClick={login}>Log in</button>
+    {/* <Link className="nav-link active" to="/profile"><button className="btn btn-success" type="button"onClick={login}>Log in</button></Link> */}
     
   </div>
 </form>

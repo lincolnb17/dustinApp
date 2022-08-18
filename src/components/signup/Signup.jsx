@@ -1,11 +1,10 @@
 import React,{useState} from 'react'
 import axios from 'axios';
-
 import "./Signup.css"
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 const Signup = () => {
-
+  const navigates = useNavigate()
   const [user,setUser]=useState({
     name:"",
     email:"",
@@ -24,7 +23,12 @@ const Signup = () => {
     const {name,email,password,reEnterPassword}=user
     if (name && email && password &&(password==reEnterPassword)){
       axios.post('http://localhost:9002/signup',user)
-      .then(res=> alert(res.data.message))
+      .then(res=> {
+        alert(res.data.message)
+        if((res.data.message)=="Successfully Registered, Please login now."){
+          navigates('/profile')
+        }
+      })
 
     }else{
       alert("Invalid Input")
